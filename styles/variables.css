@@ -1,1 +1,44 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+   --page-section-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.75rem);
+    --font:"Inter-Variable";
+    --font-accent:"PressStart2P-Regular";
+
+    --main-font-size: 18px;
+    --accent-font-size: 14px;
+
+    --heart-hover: #000;
+
+    --floppy-size: 21px;
+    --floppy-size-modal: 39px;
+    --floppy-color: #FFFFFF;
+    --modal-padding-inline: 30px;  /*всплывающее окно*/
+    --background-color: #fff;
+    --hover-heart: #000;
+    --button-text-color: #000;
+    --card-font-weight: 410px;
+    --card-title-font-weight: 710px;
+    --card-inline-size:  clamp(min(100%, 375px), 50vh, 696); /*размер страницы*/
+  
+  
+ --background-image: repeating-linear-gradient(
+      to right, /* слева напрво */
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ), 
+    repeating-linear-gradient(
+      to bottom, /*сверху вниз*/
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a
+    );
+}
+
