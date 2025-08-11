@@ -1,1 +1,1 @@
-https://zletick.github.io/zakrivayuschiy-teg-f/
+https://github.com/Zletick/zakrivayuschiy-teg-f
