@@ -2,22 +2,25 @@
 :root{
    --page-section-size: clamp(23.4375rem, 16.3732rem + 30.1408vw, 43.75rem);
     --font:"Inter-Variable";
-    --font-accent:"PressStart2P-Regular";
+    --font-accent:"PressStart2P";
 
     --main-font-size: 18px;
     --accent-font-size: 14px;
 
     --heart-hover: #000;
 
-    --floppy-size: 21px;
+    --background-color: #fff;
+    --main-color: #000;
+
+    --floppy-size: 28px;
     --floppy-size-modal: 39px;
     --floppy-color: #FFFFFF;
     --modal-padding-inline: 30px;  /*всплывающее окно*/
     --background-color: #fff;
     --hover-heart: #000;
     --button-text-color: #000;
-    --card-font-weight: 410px;
-    --card-title-font-weight: 710px;
+    --card-font-weight: 410;
+    --card-title-font-weight: 710;
     --card-inline-size:  clamp(min(100%, 375px), 50vh, 696); /*размер страницы*/
   
   

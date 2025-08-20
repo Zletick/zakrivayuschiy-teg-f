@@ -20,7 +20,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   line-height: normal;
-  font-variation-settings: var(--card-font-weight, 410px);
+  font-variation-settings: var(--card-font-weight, "wght" 410px);
   width: var(--page-section-size);
   margin-bottom: 100px;
 }
@@ -72,7 +72,7 @@
 .title {
   font-size: var(--main-font-size, 18px);
   padding: 4px;
-  font-variation-settings: 715;
+  font-variation-settings: "wght" 715;
   line-height: normal;
   padding-inline: 10px;
   padding-block: 4px;
@@ -100,7 +100,7 @@
   margin-block: 0 25px;
   font-family: var(--font, Arial, sans-serif);
   line-height: 21px;
-  font-variation-settings: 410;
+  font-variation-settings: "wght" 410;
   width: 100%;
 }
 
@@ -120,8 +120,7 @@
 @supports (--webkit-text-stroke: 1px #fff) {
   /*проверка */
   .article__img-label {
-    text-shadow: none;
-    --webkit-text-stroke: 1px #fff;
+    --webkit-text-stroke: 1px  #fff;
   }
 }
 .button__container {
@@ -137,15 +136,18 @@
   border: 2px solid #000;
   overflow: hidden;
   display: block;
+  
+  
 }
 
 /*кнопка после*/
 .button::after {
-  content: "";
+ content: "";
   position: absolute;
   inset: 0;
   background-color: var(--main-color, #000);
   transform: scaleX(0);
+  
 }
 
 /*кнопка в состоянии наведения и применение черного эффекта, который взят из after*/
@@ -156,23 +158,28 @@
 }
 .button:focus {
   outline: none;
+ 
+
 }
 /*наведение*/
 .button:focus-visible {
-  box-shadow: 2px 2px 0 0 #000;
-  transition-duration: 0.3s;
+   box-shadow: 2px 2px 0 0 var(--main-color, #000);
+   transition-duration:  0.3s ; /*тень*/
+  
 }
 /*сердце*/
 .card__icon-button {
-  border: 2px solid transparent;
+ border: 2px solid transparent;
   background-color: transparent;
-  transition-duration: 0.3s;
-  transition-timing-function: ease;
+  transition: border-color 0.3s ease;
   cursor: pointer;
-  align-self: center;
-  height: 100%;
+  padding: 0; /* Убрали лишний отступ справа */
   display: flex;
-  padding: 0 4px 0 0;
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: center; /* Центрирование по горизонтали */
+  height: 38px; /* Высота как у кнопки Like */
+  width: 39px; /* Ширина соответствует размеру иконки */
+  margin-right: 5px;
 }
 /*наведение*/
 .card__icon-button:focus {
@@ -185,23 +192,26 @@
 }
 /*кнопка like*/
 .card__like-button {
-  border: 2px solid black;
-  inline-size: 130px;
-  block-size: 38px;
+ border: 2px solid black;
+  width: 130px;
+  height: 38px;
   background-color: var(--background-color, #fff);
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .like-icon {
   width: 39px;
   height: 36px;
+  display: block;
 }
 .button__text {
   font-family: var(--font-accent, Arial, sans-serif);
   position: relative;
   z-index: 1;
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   font-size: var(--accent-font-size);
-  color: #fff;
+  color: var(--text-color-button, #FFF);
   mix-blend-mode: difference;
   text-transform: none;
 }
@@ -244,14 +254,16 @@
   background-color: var(--background-color, #fff);
 }
 /*Дискета*/
-.floppy {
+.discet {
   position: relative;
   z-index: 1;
-  inline-size: var(--floppy-size, 21px);
-  block-size: var(--floppy-size, 21px);
-  color: var(--floppy-color, #ffffff);
+  inline-size: var(--floppy-size, 28px);
+  block-size: var(--floppy-size, 28px);
+  fill: var(--icon-fill-color, #FFF);
   mix-blend-mode: difference;
-  color: #fff;
+  flex-shrink: 0; 
+  align-self: center; 
+  
 }
 .floppy__dialog {
   inline-size: var(--floppy-size-modal, 39px);
@@ -292,7 +304,7 @@
 .modal__title {
   font-size: var(--accent-font-size, 14px);
   font-family: var(--font-accent, Arial, sans-serif);
-  font-variation-settings: 400;
+  font-variation-settings: "wght" 400;
   line-height: 1.5;
 }
 .modal::backdrop {

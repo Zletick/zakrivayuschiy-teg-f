@@ -27,22 +27,22 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
+              type="image/jpeg"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <img class="article__img" src="../images/image-2.jpg" />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+             <img class="article__img"
+              src="../images/image-2.jpg" 
+              alt="изображение первой картинки" />
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -57,7 +57,7 @@
           </p>
 
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -65,6 +65,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -88,12 +89,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -108,25 +103,24 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--graycale"
-              src="../images/image-2.jpg"
+              type="image/jpeg"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+            <img
+              class="article__img article__img--graycale"
+              src="../images/image-2.jpg"
+              alt="изображение 1 спринт"
+            />
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -142,7 +136,7 @@
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -150,6 +144,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -173,12 +168,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -193,25 +182,24 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--saturate"
-              src="../images/image-2.jpg"
+              type="image/jpng"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+            <img
+              class="article__img article__img--saturate"
+              src="../images/image-2.jpg"
+              alt="1 спринт: А если не получится"
+            />
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -226,7 +214,7 @@
           </p>
 
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -234,6 +222,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -257,11 +246,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -361,25 +345,25 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--hue-rotate"
-              src="../images/image-2.jpg"
+              type="image/jpng"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
+            
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+            <img
+              class="article__img article__img--hue-rotate"
+              src="../images/image-2.jpg"
+              alt="2 спринт: Погоня за идеалом"
+            />
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -396,7 +380,7 @@
           </p>
 
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -404,6 +388,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -427,12 +412,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -448,24 +427,23 @@
             <source
               srcset="../images/image-2.jpg"
               type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--invert"
-              src="../images/image-2.jpg"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+             <img
+              class="article__img article__img--invert"
+              src="../images/image-2.jpg"
+              alt="2 спринт: О тех, кто рядом"
+            />
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -491,6 +469,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -514,12 +493,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -534,25 +507,24 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--sepia"
-              src="../images/image-2.jpg"
+              type="image/jpng"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+            <img
+              class="article__img article__img--sepia"
+              src="../images/image-2.jpg"
+              alt="3 спринт: Обходные стратегии"
+            />
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -567,7 +539,7 @@
           </p>
 
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -575,6 +547,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -598,12 +571,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -703,25 +670,25 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--blur"
-              src="../images/image-2.jpg"
+              type="image/jpng"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+            <img
+              class="article__img article__img--blur"
+              src="../images/image-2.jpg"
+              alt="3 спринт: Когда опускаются руки"
+            />
+            
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -738,7 +705,7 @@
           </p>
 
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -746,6 +713,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -769,12 +737,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -789,25 +751,25 @@
           <picture>
             <source
               srcset="../images/image-2.jpg"
-              type="image/png"
-              media="(width => 375px)"
-            />
-            <img
-              class="article__img article__img--mix"
-              src="../images/image-2.jpg"
+              type="image/jpng"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
             <source
               srcset="../images/image-2.avif"
               type="image/avif"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.avif" srcset="../images/image-2.avif" />
             <source
               srcset="../images/image-2.webp"
               type="image/webp"
-              media="(width => 375px)"
+              media="(min-width: 375px) and (max-width: 1400px)"
             />
-            <source type="image.webp" srcset="images/image-2.webp" />
+            <img
+              class="article__img article__img--mix"
+              src="../images/image-2.jpg"
+              alt="«Сейчас я здесь»"
+            />
+            
           </picture>
           <p class="article__img-label">&lt;/HTML&gt;</p>
         </div>
@@ -825,7 +787,7 @@
             этой точке пути.
           </p>
           <div class="button__container">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-label="Лайк">
               <svg
                 class="like-icon"
                 width="39"
@@ -833,6 +795,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -856,12 +819,6 @@
                   d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
                   class="sparks"
                 />
-
-                <defs>
-                  <clipPath id="clip0_1_1574">
-                    <rect width="39" height="36" fill="white" />
-                  </clipPath>
-                </defs>
               </svg>
             </button>
             <button class="button card__like-button" type="button">
@@ -876,23 +833,22 @@
         onclick="window['dialog'].showModal()"
         aria-controls="dialog"
       >
-        <svg class="floppy">
-          <use href="./image.svg#floppy"></use>
+        <svg class="discet" viewBox="0 0 21 21" width="21" height="21">
+           <use href="svg/icon.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
     <dialog id="dialog" class="modal">
       <div class="modal__body">
-        <svg class="floppy floppy__dialog">
-          <use href="./image.svg#floppy"></use>
-        </svg>
+        <svg class="discet floppy__dialog" viewBox="0 0 21 21" width="21" height="21">
+          <use href="svg/icon.svg#floppy"></use>
+         </svg>
         <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
       </div>
       <button
         type="button"
         class="button save-button modal__button"
-        type="button"
         onclick="window['dialog'].close()"
       >
         <span class="button__text">ок</span>
